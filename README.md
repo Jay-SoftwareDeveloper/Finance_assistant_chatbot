@@ -74,7 +74,7 @@ You can type natural language like:
 - The app will figure out the category, amount, and date.
 ---
 
-## ☁Azure SQL Setup
+## Azure SQL Setup
 In `azure_sql.py` update your connection string like this:
 ```python
 connect_to_azure():
