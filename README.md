@@ -6,14 +6,14 @@ This project is a simple and smart expense tracker powered by an AI chatbot. You
 
 ## Features 🚀 
 -  AI Chatbot to understand natural language inputs
-- 🔄 Real-time stream processing with Apache Kafka
-- ☁️ Azure SQL for persistent expense storage
-- 📊 D3.js dashboard for visual analytics (browser-based)
-- 🌐 Flask-based web UI
+- Real-time stream processing with Apache Kafka
+- Azure SQL for persistent expense storage
+- D3.js dashboard for visual analytics (browser-based)
+- Flask-based web UI
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 finance-assistant-chatbot/
  app.py                 # Flask app
@@ -67,14 +67,14 @@ python kafka_consumer.py
 
 ---
 
-##  Sample Input
+## Sample Input
 You can type natural language like:
 > Add $75 for shopping today  
 > Add $20 for transport on 3rd April
-The app will figure out the category, amount, and date.
+- The app will figure out the category, amount, and date.
 ---
 
-## ☁️ Azure SQL Setup
+## ☁Azure SQL Setup
 In `azure_sql.py` update your connection string like this:
 ```python
 connect_to_azure():
