@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finance Chatbot</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h2>💬 Finance Assistant Chatbot</h2>
+    <input id="userInput" type="text" placeholder="e.g., Add $30 for food today">
+    <button onclick="sendMessage()">Send</button>
+    <p id="reply"></p>
+    <script>
+    function sendMessage() {
+        fetch('/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: document.getElementById('userInput').value })
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('reply').innerText = data.reply;
+        });
+    }
+    </script>
+</body>
+</html>
